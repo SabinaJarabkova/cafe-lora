@@ -21,6 +21,22 @@ export const Header = () => {
         </div>
     `;
 
+
+    const navBtn = element.querySelector('.nav-btn');
+    navBtn.addEventListener('click', () => {
+        
+        element.querySelector('nav').classList.toggle('nav-closed')
+    })
+
+
+    const rollOut = element.querySelector('.rollout-nav');
+    rollOut.addEventListener('click', () => {
+        
+        element.querySelector('.rollout-nav').classList.toggle('nav-closed')
+    })
+
+
+
     return element;
 
 
